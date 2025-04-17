@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My favorite memories of him</title>
+  <style>
+    body {
+      background-color: #f0eaff;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding: 50px;
+      color: #4b0082;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background-color: #b83280;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a0266a;
+    }
+
+    #output {
+      margin-top: 40px;
+      font-size: 1.8rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>My favorite memories with him 🤠</h1>
+  <button onclick="generateCompliment()">Click for a memory</button>
+  <p id="output"></p>
+
+  <script>
+    const compliments = [
+      "Cheesecake night",
+      "Birthday dinner @ Maureen Janssens",
+      "Initial rizz on the suitcase @ transfers",
+      "Griddy in the rain",
+      "Beth Shalom. Every time",
+      "DL calls/window talk",
+      "Every time I talk to him on Pday!!",
+      "Just every single day in A'dam"
+    ];
+
+    function generateCompliment() {
+      const i = Math.floor(Math.random() * compliments.length);
+      document.getElementById("output").textContent = compliments[i];
+    }
+  </script>
+</body>
+</html>
